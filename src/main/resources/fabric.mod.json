@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "calisthenicsmod",
+	"version": "${version}",
+	"name": "Calisthenics Mod",
+	"description": "Calisthenics Bar and Skills",
+	"authors": [
+		"BokiX"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/calisthenicsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bokix.calisthenicsmod.CalisthenicsMod"
+		],
+		"fabric-datagen": [
+			"net.bokix.calisthenicsmod.CalisthenicsModDataGenerator"
+		],
+		"client": [
+			"net.bokix.calisthenicsmod.CalisthenicsModClient"
+		]
+	},
+	"mixins": [
+		"calisthenicsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
